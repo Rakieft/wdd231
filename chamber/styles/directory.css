@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+/* Light theme (default) */
+:root {
+  --main-bg-color: #ffffff;
+  --main-text-color: #333333;
+  --background-color: #052659;
+  --background-color1: #004e64;
+  --background-color2: #042a2b;
+  --text-color: white;
+  --accent1-color: #AAD8D3;
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--secondary-color);
+}
+
+
+body {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+
+/* Dark theme styles */
+body.dark-theme {
+  --main-bg-color: #1f1f1f;
+  --main-text-color: #f5f5f5;
+  --main-accent-color: yellow;
+}
+
+
+
+header {
+  margin-top: 10px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+
+
+header h1 {
+  font-family: 'Roboto Slab', slab serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 180px;
+  margin-right: 0px;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'poppinsa', sans-serif;
+  font-weight: bold;
+}
+
+/* Active link styling */
+.navLinks .navItem.active {
+  color: var(--text-color); 
+  border-bottom: 2px solid yellow; 
+}
+
+
+
+.menu-toggle {
+  display: none;
+}
+
+
+.menu-toggle .close {
+  display: none;
+}
+
+.menu-toggle .hamburger {
+  display: inline;
+}
+
+
+
+nav.active {
+  display: block; 
+}
+
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+#theme-toggle {
+  height: 45px;
+}
+
+
+main {
+  padding: 1rem;
+}
+
+.menu {
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+#grid, #list {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 5px 15px 5px 15px;
+  font-family: 'Roboto Slab', slab serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+
+#members-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  gap: 1rem;
+}
+
+#members-container.list-view {
+  display: block;
+}
+
+#members-container.list-view .member-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#members-container.list-view .member-card img {
+  width: 100px;
+  height: auto;
+}
+
+/* Common member card styling */
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.member-card h2 {
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', slab serif;
+  text-align: center;
+}
+
+.member-card p {
+  margin: 0.25rem 0;
+  font-family: 'poppins', sans-serif;
+}
+
+
+.member-card a {
+  color: blue;
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--background-color);
+  color: white;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  font-family: 'poppins', sans-serif;
+}
+
+.footer-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+
+
+.footer-info h1 {
+  font-size: 18px;
+}
+
+
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 50px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-meta {
+  font-size: 15px;
+  flex: 1;
+  min-width: 250px;
+  text-align: right;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+header {
+  display: block;
+  margin-top: 10px; 
+  padding: 10px;
+  text-align: left;
+  position: relative; 
+}
+
+header h1 {
+  font-size: 10px;
+  font-family: 'poppins', sans-serif;
+}
+
+
+#theme-toggle  {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.menu-toggle {
+  display: block; 
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+.toggle-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  right: 0;
+}
+
+
+
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav.active {
+  display: block;
+}
+
+/* Show/hide the hamburger and close buttons appropriately */
+.menu-toggle.open .hamburger {
+  display: none; 
+}
+
+.menu-toggle.open .close {
+  display: inline; 
+}
+
+nav ul {
+  display: none;
+}
+
+nav.open ul {
+  display: block;
+}
+
+#members-container {
+  display: block; 
+}
+
+.member-card {
+  display: block; 
+  margin-bottom: 20px; 
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+}
+
+#members-container.list-view .member-card {
+  display: block;
+}
+}
