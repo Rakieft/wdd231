@@ -48,6 +48,7 @@ header {
 
 header h1 {
   font-family: 'Roboto Slab', slab serif;
+  margin-left: 3px;
 }
 
 .logo {
@@ -57,7 +58,8 @@ header h1 {
 
 .logo img {
   height: 180px;
-  margin-right: 0px;
+  /* margin-right: 4px; */
+  /* margin-left: 90px; */
 }
 
 
@@ -146,7 +148,7 @@ main {
 
 #members-container {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
@@ -169,8 +171,10 @@ main {
 /* Common member card styling */
 .member-card {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 1rem;
+  margin-right: 5px;
+  position: relative;
 }
 
 .member-card img {
@@ -192,7 +196,8 @@ main {
 
 
 .member-card a {
-  color: blue;
+  color: blueviolet;
+  padding: 0px;
 }
 
 

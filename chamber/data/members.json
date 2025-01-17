@@ -1,0 +1,65 @@
+[
+    {
+        "name":"Gadget Haiti",
+        "address":"9 delmas 31",
+        "phone":"+509 47372125",
+        "website":"https://urls.fr/lTBEwf",
+        "image":"gadget.jpg",
+        "membershipLevel": 1
+    },
+
+    
+    {
+        "name": "PC Xpress",
+        "address": "Angle Rues Lambert et Rebecca, Port-au-Prince ",
+        "phone": " +509 2941-4141",
+        "website": "https://pcxpress.com/",
+        "image": "unnamed.jpg",
+        "membershipLevel": 2
+    },
+
+    {
+        "name": "Marriot",
+        "address": "147 Ave Jean-Paul II, Port-au-Prince 6113",
+        "phone": "+509 28 14 2800",
+        "website": "https://urls.fr/EYld8c",
+        "image": "Marriot.png",
+        "membershipLevel": 3
+    },
+
+    {
+        "name": "Olympic Market",
+        "address": "Lalue, Angle Ruelle Berne, Port-au-Prince 7410",
+        "phone": "+509 55 15 5050",
+        "website": "https://urls.fr/ZjbvwI",
+        "image": "olympic.jpg",
+        "membershipLevel": 3
+    },
+
+    {
+        "name": "Black Store",
+        "address": " RUE LOUVERTURE PETION VILLE, 6110",
+        "phone": "38 24 6095",
+        "website": "https://urls.fr/u3OZZ4",
+        "image": "black.png",
+        "membershipLevel": 1
+    },
+
+    {
+        "name": "Kinam",
+        "address": "Place Saint Pierre, Port-au-Prince",
+        "phone": " +509 28 15 8000",
+        "website": "https://urls.fr/LPuQ38",
+        "image": "kinam.png",
+        "membershipLevel": 3
+    },
+
+    {
+        "name": "Best Western",
+        "address": "50 Angle Louverture & Geffrard Petion-Ville HT, 6110",
+        "phone": "+509 28 14 2200",
+        "website": "https://urls.fr/bddSeO",
+        "image": "best.jpg",
+        "membershipLevel": 3
+    }
+]
