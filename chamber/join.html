@@ -55,6 +55,89 @@
 
 
         <main>
+            <div class="container">
+                <form action="thankyou.html" method="get" class="memberForm">
+    
+                    <h2>Membership Form</h2>
+    
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" placeholder="Jhon" required>
+    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" placeholder="Jean" required>
+    
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" title="Title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@gmail.com" required>
+    
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" title="Phone" autocomplete="tel" placeholder="+509 54542655" required>
+    
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization" name="organization" title="Organization" autocomplete="organization" placeholder="Name of organization" required>
+    
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" title="Organization Description"></textarea>
+    
+                   <input type="hidden" name="timestamp" id="timestamp" value="">
+                   <label><button type="submit">Apply for Membership</button></label>
+                </form>
+
+                <div class="memberLevel">
+                    <h2>Membership Levels</h2>
+    
+                    <!-- Card Membership Level -->
+                    <div class="check">
+                        <h3>Non Profit Membership Levels</h3>
+                        <button class="modalButton" data-modal="modal-NonProfit">Learn More</button>
+                    </div>
+                    <div class="check">
+                        <h3>Bronze Membership Levels</h3>
+                        <button class="modalButton" data-modal="modalBronze">Learn More</button>
+                    </div>
+                    <div class="check">
+                        <h3>Silver Membership Levels</h3>
+                        <button class="modalButton" data-modal="modalSilver">Learn More</button>
+                    </div>
+                    <div class="check">
+                        <h3>Gold Membership Levels</h3>
+                        <button class="modalButton" data-modal="modalGold">Learn More</button>
+                    </div>
+                </div>
+            </div>
+    
+                    <!-- Modal Membership -->
+                     <div class="modal" id="modal-NonProfit">
+                        <div class="modalContent">
+                            <span class="closeButton">&times;</span>
+                            <h3>Non Profit Membership Benefits</h3>
+                            <p>Includes special events, training, and basic networking</p>
+                        </div>
+                     </div>
+                     <div class="modal" id="modalBronze">
+                        <div class="modalContent">
+                            <span class="closeButton">&times;</span>
+                            <h3>Bronze Membership Benefits</h3>
+                            <p>Includes events, training and some advertising</p>
+                        </div>
+                     </div>
+                     <div class="modal" id="modalSilver">
+                        <div class="modalContent">
+                            <span class="closeButton">&times;</span>
+                            <h3>Silver Membership Benefits</h3>
+                            <p>Includes events, advanced training, advertising and discounts</p>
+                        </div>
+                     </div>
+                     <div class="modal" id="modalGold">
+                        <div class="modalContent">
+                            <span class="closeButton">&times;</span>
+                            <h3>Gold Membership Benefits</h3>
+                            <p>Includes VIP events, training, Premium advertising and maximum discounts</p>
+                        </div>
+                     </div>
+    
 
         </main>
 

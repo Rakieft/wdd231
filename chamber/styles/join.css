@@ -85,7 +85,7 @@
     font-weight: bold;
   }
   
-  /* Active link styling */
+ 
   .navLinks .navItem.active {
     color: var(--text-color); 
     border-bottom: 2px solid blueviolet; 
@@ -124,14 +124,148 @@
     height: 45px;
   }
 
-main {
-  padding: 1rem;
+  .container {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
 }
 
-.menu {
-  margin: 0 0 20px 0;
+.container h2 {
+    margin-left: 25px;
+    background-color: var(--background-color1);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.memberForm .memberLevel {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, textarea {
+    border-left: 5px solid black;
+    width: 200%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+form button {
+    padding: 15px;
+    margin: 0 0 15px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #D3E8F3;
+
+}
+
+/* Basic check */
+.check {
+  border: 1px solid #ccc;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+  padding: 10px;
+  margin-top: 25px;
+  background-color:#D3E8F3;
+  text-align: center;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s ease-in-out forwards;
+  color: black;
+}
+
+/* Individual card delay for staggered animation */
+.card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+/* Keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); 
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); 
+  }
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.modalContent {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 70%;
+  max-width: 600px;
   text-align: center;
 }
+
+/* The Close */
+.closeButton {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  float: right;
+}
+
+.closeButton:hover, .closeButton:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
 
 /* start footer */
 footer {
@@ -185,3 +319,94 @@ footer {
   footer p {
     margin: 5px 0;
   }
+
+
+  @media (max-width: 768px) {
+
+    body {
+      padding: 10px; 
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+    }
+  
+    header {
+      display: block;
+      margin-top: 10px; 
+      padding: 10px;
+      text-align: left;
+      position: relative; 
+    }
+  
+    header h1 {
+      font-size: 10px;
+      font-family: 'poppins', sans-serif;
+    }
+  
+    #theme-toggle  {
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+  
+    .menu-toggle {
+      display: block; 
+      background: none;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer;
+    }
+  
+    .toggle-box {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 23px;
+      right: 0;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      text-align: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav.active {
+      display: block;
+    }
+  
+    /* Show/hide the hamburger */
+    .menu-toggle.open .hamburger {
+      display: none; 
+    }
+  
+    .menu-toggle.open .close {
+      display: inline; 
+    }
+  
+    nav ul {
+      display: none;
+    }
+  
+    nav.open ul {
+      display: block;
+    }
+  
+
+    .container {
+        display: block;
+    }  
+    
+    footer {
+      margin-top: 20px;
+    }
+   }
+  
