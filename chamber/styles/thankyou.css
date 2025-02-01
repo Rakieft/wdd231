@@ -123,8 +123,8 @@
     height: 45px;
   }
 
-  /* Thank You Page Container */
-  .thankyou-container, h2, p{
+  
+  .thank-you, h2, p{
     text-align: center;
   }
 
@@ -209,7 +209,7 @@ footer {
 
 
 
-  /* Media query for devices with a max-width of 768px */
+  
 @media (max-width: 768px) {
 
     body {
@@ -272,7 +272,7 @@ footer {
       display: block;
     }
   
-    /* Show/hide the hamburger and close buttons appropriately */
+    /* Show/hide the hamburger */
     .menu-toggle.open .hamburger {
       display: none; 
     }
