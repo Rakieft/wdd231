@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   
   const apiKey = '9f26309485957c2bd9641a631b5817c8';
-  const city = 'HAITI'; // Chamber's location
-  const units = 'imperial'; // Use 'metric' for Celsius
+  const city = 'HAITI'; 
+  const units = 'imperial'; 
   const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=${units}&appid=${apiKey}`;
   
@@ -96,12 +96,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .catch(error => console.error('Error fetching current weather:', error));
   
-  // Fetch 3-Day Forecast (Today, Tomorrow, and Next Day)
+  
   fetch(forecastUrl)
       .then(response => response.json())
       .then(data => {
-          // Weather forecast for today, tomorrow, and the day after
-          const forecastDays = [0, 8, 16]; // Corresponds to 3-hour interval forecasts for day 1, 2, and 3
+          
+          const forecastDays = [0, 8, 16]; 
   
           document.getElementById('day1-temp').textContent = `${Math.round(data.list[forecastDays[0]].main.temp)}°F`;
           document.getElementById('day2-temp').textContent = `${Math.round(data.list[forecastDays[1]].main.temp)}°F`;
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const daysSinceLastVisit = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
   
         if (daysSinceLastVisit < 1) {
-            visitorMessage.textContent = "Back so soon! Awesome!";
+            visitorMessage.textContent = "Back so soon! Awesome.";
         } else {
             visitorMessage.textContent = `You last visited ${daysSinceLastVisit} ${daysSinceLastVisit === 1 ? "day" : "days"} ago.`;
         }
