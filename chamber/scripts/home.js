@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
@@ -145,6 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   // Discover JS start
+  
+  
+  
   document.addEventListener("DOMContentLoaded", () => {
     const visitorMessage = document.getElementById("visitorMessage");
     const lastVisit = localStorage.getItem("lastVisit");
@@ -188,4 +194,8 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(image);
     });
   });
+
+
+
+
   // Discover JS end
