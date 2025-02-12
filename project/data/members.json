@@ -1,0 +1,58 @@
+[
+    {
+        "name":"Super Market",
+        "address":"Rue Darwin",
+        "phone":"+509 2819-3030/ 2819-3031",
+        "website":"https://urlr.me/sYvuCZ",
+        "image":"super.png",
+        "membershipLevel": 1
+    },
+
+    
+    {
+        "name": "PC Xpress",
+        "address": "Angle Rues Lambert et Rebecca, Port-au-Prince ",
+        "phone": " +509 2941-4141",
+        "website": "https://pcxpress.com/",
+        "image": "unnamed.jpg",
+        "membershipLevel": 2
+    },
+
+    {
+        "name": "Point Chaud",
+        "address": "134 bis, route de Frères, Pétion-Ville",
+        "phone": "+509 2817-0373/ 28180373",
+        "website": "https://urlr.me/9nB56C",
+        "image": "point.png",
+        "membershipLevel": 3
+    },
+
+    {
+        "name": "Valerio Canez SA",
+        "address": " Pétion-Ville",
+        "phone": "+509 28 14 0111",
+        "website": "https://valeriocanez.com/",
+        "image": "valerio.png",
+        "membershipLevel": 3
+    },
+
+    {
+        "name": "Black Store",
+        "address": " RUE LOUVERTURE PETION VILLE, 6110",
+        "phone": "38 24 6095",
+        "website": "https://urls.fr/u3OZZ4",
+        "image": "black.png",
+        "membershipLevel": 1
+    },
+
+    {
+        "name": "CK Hardware",
+        "address": "Pétion-Ville, rue Fernand de Baudière",
+        "phone": " +509   2941-1313",
+        "website": "https://ckhardwarehaiti.com/",
+        "image": "ck.jpg",
+        "membershipLevel": 3
+    }
+
+    
+]
