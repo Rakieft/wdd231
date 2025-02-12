@@ -263,7 +263,7 @@ footer {
       display: block; 
       background: none;
       border: none;
-      color: var(--background-color2);
+      color:  #333;
       font-size: 2rem;
       top: 1rem;
       right: 1rem;

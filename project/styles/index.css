@@ -333,11 +333,10 @@ footer {
       font-size: 10px;
       font-family: 'poppins', sans-serif;
     }
-    
     .logo img {
-      width: 20%;
-      height: 15%;
-    }
+    width: 20%;
+    height: 15%;
+  }
   
     #theme-toggle  {
       background: none;
