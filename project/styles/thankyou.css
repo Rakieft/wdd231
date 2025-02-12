@@ -221,15 +221,15 @@ footer {
     }
   
     .menu-toggle {
-      display: block; 
-      background: none;
-      border: none;
-      color: #333;
-      font-size: 2rem;
-      top: 1rem;
-      right: 1rem;
-      cursor: pointer;
-    }
+        display: block; 
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+      }
   
     .toggle-box {
       display: flex;
