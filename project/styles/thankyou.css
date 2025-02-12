@@ -189,38 +189,37 @@ footer {
   @media (max-width: 768px) {
 
     body {
-      padding: 10px; 
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-    }
-  
-    header {
-      display: block;
-      margin-top: 10px; 
-      padding: 10px;
-      text-align: left;
-      position: relative; 
-    }
-  
-    header h1 {
-      font-size: 10px;
-      font-family: 'poppins', sans-serif;
-    }
-
-    .logo img {
-        width: 20%;
-        height: 15%;
+        padding: 10px; 
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
       }
-  
-    #theme-toggle  {
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin-left: 15px;
+    
+      header {
+        display: block;
+        margin-top: 10px; 
+        padding: 10px;
+        text-align: left;
+        position: relative; 
+      }
+    
+      header h1 {
+        font-size: 10px;
+        font-family: 'poppins', sans-serif;
+      }
+      .logo img {
+      width: 20%;
+      height: 15%;
     }
-  
-    .menu-toggle {
+    
+      #theme-toggle  {
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-left: 15px;
+      }
+    
+      .menu-toggle {
         display: block; 
         background: none;
         border: none;
@@ -230,48 +229,45 @@ footer {
         right: 1rem;
         cursor: pointer;
       }
-  
-    .toggle-box {
-      display: flex;
-      align-items: center;
-      position: absolute;
-      top: 23px;
-      right: 0;
-    }
-  
-    nav {
-      display: none;
-      flex-direction: column;
-      background-color: black;
-      text-align: center;
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-  
-    nav.active {
-      display: block;
-    }
-
     
+      .toggle-box {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 23px;
+        right: 0;
+      }
     
-  
-    /* Show/hide the hamburger */
-    .menu-toggle.open .hamburger {
-      display: none; 
-    }
-  
-    .menu-toggle.open .close {
-      display: inline; 
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    nav.open ul {
-      display: block;
-    }
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    
+      nav.active {
+        display: block;
+      }
+    
+      /* Show/hide the hamburger  */
+      .menu-toggle.open .hamburger {
+        display: none; 
+      }
+    
+      .menu-toggle.open .close {
+        display: inline; 
+      }
+    
+      nav ul {
+        display: none;
+      }
+    
+      nav.open ul {
+        display: block;
+      }
   
 
     .container {
