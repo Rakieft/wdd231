@@ -403,8 +403,8 @@ footer {
         border: none;
         border-radius: 10px;
         position: absolute;
-        bottom: 50%;
-        right: 15%;
+        bottom: 15%;
+        right: 10%;
         cursor: pointer;
     }
 
